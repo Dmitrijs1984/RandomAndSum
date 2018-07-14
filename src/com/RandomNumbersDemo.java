@@ -12,13 +12,13 @@ public class RandomNumbersDemo {
         int randomNumbersRightBorder = scanner.nextInt();
 
         RandomNumberGenerator randomNumberGenerator = new RandomNumberGenerator();
-        long randomNumber1 = randomNumberGenerator.generateRandomNumber(randomNumbersRightBorder, randomNumbersLeftBorder);
-        long randomNumber2 = randomNumberGenerator.generateRandomNumber(randomNumbersRightBorder, randomNumbersLeftBorder);
-        long randomNumber3 = randomNumberGenerator.generateRandomNumber(randomNumbersRightBorder, randomNumbersLeftBorder);
-        System.out.println("Random numbers: " + randomNumber1 + "; " + randomNumber2 + "; " + randomNumber3);
+        long firstRandomNumber = randomNumberGenerator.generateRandomNumber(randomNumbersRightBorder, randomNumbersLeftBorder);
+        long secondRandomNumber = randomNumberGenerator.generateRandomNumber(randomNumbersRightBorder, randomNumbersLeftBorder);
+        long thirdRandomNumber = randomNumberGenerator.generateRandomNumber(randomNumbersRightBorder, randomNumbersLeftBorder);
+        System.out.println("Random numbers: " + firstRandomNumber + "; " + secondRandomNumber + "; " + thirdRandomNumber);
 
         Calculator calculator = new Calculator();
-        long sumResult = calculator.sumThreeNumbers(randomNumber1, randomNumber2, randomNumber3);
+        long sumResult = calculator.sumThreeNumbers(firstRandomNumber, secondRandomNumber, thirdRandomNumber);
         System.out.println("Random numbers Sum: " + sumResult);
     }
 }

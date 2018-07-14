@@ -1,8 +1,8 @@
 package com;
 
 public class Calculator {
-    public long sumThreeNumbers(long number1, long number2, long number3) {
-        long sumThreeNumbers = number1 + number2 + number3;
+    public long sumThreeNumbers(long numberOne, long numberTwo, long numberThree) {
+        long sumThreeNumbers = numberOne + numberTwo + numberThree;
         return sumThreeNumbers;
     }
 }
